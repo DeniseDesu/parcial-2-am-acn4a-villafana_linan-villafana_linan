@@ -2,6 +2,6 @@
 
 TP Aplicaciones Moviles - Sergio Medina - 1C25 - ACN4AV
 
-Integrantes:
-Villafana Liñan, David
+Integrantes:  
+Villafana Liñan, David  
 Villafana Liñan, Vanesa
