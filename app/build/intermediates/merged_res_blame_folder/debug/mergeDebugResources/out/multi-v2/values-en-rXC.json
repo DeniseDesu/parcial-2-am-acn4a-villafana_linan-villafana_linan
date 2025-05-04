@@ -4,7 +4,7 @@
             "outputFile": "ar.edu.davinci.tufi_store.app-mergeDebugResources-30:/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\D\\.gradle\\caches\\8.11.1\\transforms\\5471a7a073ce06ccc7fc145bad896e1c\\transformed\\appcompat-1.7.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\denis\\.gradle\\caches\\8.11.1\\transforms\\5471a7a073ce06ccc7fc145bad896e1c\\transformed\\appcompat-1.7.0\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\D\\.gradle\\caches\\8.11.1\\transforms\\2a361e5de03be56a62bf11b2842c55d7\\transformed\\core-1.13.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\denis\\.gradle\\caches\\8.11.1\\transforms\\2a361e5de03be56a62bf11b2842c55d7\\transformed\\core-1.13.0\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
