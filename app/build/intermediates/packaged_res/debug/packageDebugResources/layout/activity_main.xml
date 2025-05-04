@@ -12,7 +12,7 @@
         android:id="@+id/top_bar"
         android:layout_width="0dp"
         android:layout_height="64dp"
-        android:background="@android:color/holo_orange_light"
+        android:background="@color/top_bar_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TUFI Store"
-            android:textColor="@android:color/white"
+            android:textColor="@color/app_name"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -63,7 +63,7 @@
         android:id="@+id/bottom_navigation"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@android:color/white"
+        android:background="@color/bottom_navigation_background"
         android:orientation="horizontal"
         android:weightSum="5"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -233,7 +233,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="¿Quiénes somos?"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_black"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -243,7 +243,7 @@
                         android:layout_marginTop="8dp"
                         android:gravity="center"
                         android:text="En Tufi Store, entendemos la emoción y la dedicación que conlleva la tarea de completar un álbum de figuritas. Somos más que una tienda online, somos un punto de encuentro para coleccionistas apasionados, expertos y novatos, que buscan esa pieza especial para dar vida a sus colecciones.\nNuestra amplia selección de figuritas sueltas abarca una variedad de temáticas y épocas, asegurando que cada coleccionista encuentre exactamente lo que busca. Desde las clásicas hasta las más raras, cada figurita en nuestro catálogo es una oportunidad para acercarte a completar tu álbum deseado.\nCelebramos cada historia detrás de las colecciones y fomentamos la conexión entre aficionados de todas partes del mundo.\nEn Tufi Store, cada clic te acerca a completar tu sueño. Explora nuestra colección hoy y ¡descubre el mundo fascinante de las figuritas!"
-                        android:textColor="@android:color/darker_gray"
+                        android:textColor="@color/text_maincard"
                         android:textSize="16sp" />
 
                 </LinearLayout>
