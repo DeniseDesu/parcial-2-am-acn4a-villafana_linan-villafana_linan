@@ -275,7 +275,7 @@
                             android:id="@+id/figurita1_title"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Nombre figurita"
+                            android:text="FIFA World Cup 2022"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -291,7 +291,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="Nombre figurita"
+                            android:text="Leandro Paredes"
                             android:textSize="14sp" />
 
                         <LinearLayout
@@ -334,7 +334,7 @@
                             android:id="@+id/figurita2_title"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Nombre figurita"
+                            android:text="FIFA World Cup 2022"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -350,7 +350,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="Nombre figurita"
+                            android:text="Cristian Romero"
                             android:textSize="14sp" />
 
                         <LinearLayout
