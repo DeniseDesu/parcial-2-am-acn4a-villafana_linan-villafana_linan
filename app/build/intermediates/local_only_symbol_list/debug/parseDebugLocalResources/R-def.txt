@@ -44,6 +44,17 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap logo_tufi_store
 string app_name
+string buttom_comprar_cat
+string cart_label
+string cat_fifawc22_title
+string fifawc22_figu_paredes
+string fifawc22_figu_romero
+string home_label
+string locations_label
+string profile_user_label
+string quienes_somos_card_text
+string quienes_somos_card_title
+string store_label
 style Base.Theme.TuFi_Store
 style Theme.TuFi_Store
 xml backup_rules
