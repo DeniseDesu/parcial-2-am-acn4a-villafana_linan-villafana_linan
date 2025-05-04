@@ -3040,7 +3040,6 @@ drawable ic_store
 drawable ic_user
 drawable ic_users
 drawable indeterminate_static
-drawable logo_tufi_store
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
 drawable m3_bottom_sheet_drag_handle
@@ -3831,8 +3830,6 @@ layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap logo_tufi_store
-mipmap logo_tufi_store_layer
-mipmap logo_tufi_store_round
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description

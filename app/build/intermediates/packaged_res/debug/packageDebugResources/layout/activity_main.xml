@@ -211,7 +211,7 @@
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:maxWidth="300dp"
-                android:src="@drawable/logo_tufi_store" />
+                android:src="@mipmap/logo_tufi_store" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"

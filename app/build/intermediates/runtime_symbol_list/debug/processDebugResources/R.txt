@@ -3039,7 +3039,6 @@ int drawable ic_store 0x7f07009f
 int drawable ic_user 0x7f0700a0
 int drawable ic_users 0x7f0700a1
 int drawable indeterminate_static 0x7f0700a2
-int drawable logo_tufi_store 0x7f0700a3
 int drawable m3_avd_hide_password 0x7f0700a4
 int drawable m3_avd_show_password 0x7f0700a5
 int drawable m3_bottom_sheet_drag_handle 0x7f0700a6
@@ -3830,8 +3829,6 @@ int layout support_simple_spinner_dropdown_item 0x7f0b006b
 int mipmap ic_launcher 0x7f0d0000
 int mipmap ic_launcher_round 0x7f0d0001
 int mipmap logo_tufi_store 0x7f0d0002
-int mipmap logo_tufi_store_layer 0x7f0d0003
-int mipmap logo_tufi_store_round 0x7f0d0004
 int plurals mtrl_badge_content_description 0x7f0e0000
 int string abc_action_bar_home_description 0x7f0f0000
 int string abc_action_bar_up_description 0x7f0f0001
