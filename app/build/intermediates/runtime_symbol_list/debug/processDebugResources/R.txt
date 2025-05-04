@@ -3226,6 +3226,7 @@ int id buttonPanel 0x7f08006c
 int id cache_measures 0x7f08006d
 int id callMeasure 0x7f08006e
 int id cancel_button 0x7f08006f
+int id card_quienes 0x7f08020e
 int id carryVelocity 0x7f080070
 int id center 0x7f080071
 int id centerCrop 0x7f080072
@@ -3372,6 +3373,7 @@ int id legacy 0x7f0800fe
 int id line1 0x7f0800ff
 int id line3 0x7f080100
 int id linear 0x7f080101
+int id linearultagreg 0x7f08020f
 int id listMode 0x7f080102
 int id list_item 0x7f080103
 int id logo_banner 0x7f080104

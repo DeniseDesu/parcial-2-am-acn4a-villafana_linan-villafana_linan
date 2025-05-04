@@ -3227,6 +3227,7 @@ id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
+id card_quienes
 id carryVelocity
 id center
 id centerCrop
@@ -3373,6 +3374,7 @@ id legacy
 id line1
 id line3
 id linear
+id linearultagreg
 id listMode
 id list_item
 id logo_banner

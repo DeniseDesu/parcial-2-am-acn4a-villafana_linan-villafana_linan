@@ -18,6 +18,7 @@ id bottom_locations
 id bottom_navigation
 id bottom_store
 id bottom_users
+id card_quienes
 id figurita1_comprar
 id figurita1_image
 id figurita1_name
@@ -26,6 +27,7 @@ id figurita2_comprar
 id figurita2_image
 id figurita2_name
 id figurita2_title
+id linearultagreg
 id logo_banner
 id main_tufi
 id menu_button
