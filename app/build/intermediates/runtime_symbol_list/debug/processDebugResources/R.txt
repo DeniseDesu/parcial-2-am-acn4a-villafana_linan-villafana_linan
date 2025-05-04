@@ -3312,12 +3312,10 @@ int id figurita1_comprar 0x7f0800c2
 int id figurita1_image 0x7f0800c3
 int id figurita1_name 0x7f0800c4
 int id figurita1_title 0x7f0800c5
-int id figurita1_ver 0x7f0800c6
 int id figurita2_comprar 0x7f0800c7
 int id figurita2_image 0x7f0800c8
 int id figurita2_name 0x7f0800c9
 int id figurita2_title 0x7f0800ca
-int id figurita2_ver 0x7f0800cb
 int id fill 0x7f0800cc
 int id fill_horizontal 0x7f0800cd
 int id fill_vertical 0x7f0800ce

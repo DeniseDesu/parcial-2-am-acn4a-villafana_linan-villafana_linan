@@ -22,12 +22,10 @@ id figurita1_comprar
 id figurita1_image
 id figurita1_name
 id figurita1_title
-id figurita1_ver
 id figurita2_comprar
 id figurita2_image
 id figurita2_name
 id figurita2_title
-id figurita2_ver
 id logo_banner
 id main_tufi
 id menu_button
