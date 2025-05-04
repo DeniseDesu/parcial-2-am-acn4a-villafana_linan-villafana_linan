@@ -310,14 +310,6 @@
                                 android:layout_weight="1"
                                 android:text="Comprar" />
 
-                            <Button
-                                android:id="@+id/figurita1_ver"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="2dp"
-                                android:layout_weight="1"
-                                android:text="Ver" />
-
                         </LinearLayout>
 
                     </LinearLayout>
@@ -376,14 +368,6 @@
                                 android:layout_marginEnd="4dp"
                                 android:layout_weight="1"
                                 android:text="Comprar" />
-
-                            <Button
-                                android:id="@+id/figurita2_ver"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="4dp"
-                                android:layout_weight="1"
-                                android:text="Ver" />
 
                         </LinearLayout>
 
