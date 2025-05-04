@@ -6,7 +6,7 @@ color holo_blue_light
 color text_black
 color text_maincard
 color top_bar_background
-drawable ic_categories
+drawable ic_cart
 drawable ic_home
 drawable ic_launcher_background
 drawable ic_launcher_foreground

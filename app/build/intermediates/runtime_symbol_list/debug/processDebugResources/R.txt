@@ -3022,7 +3022,7 @@ int drawable ic_call_answer_video 0x7f07008a
 int drawable ic_call_answer_video_low 0x7f07008b
 int drawable ic_call_decline 0x7f07008c
 int drawable ic_call_decline_low 0x7f07008d
-int drawable ic_categories 0x7f07008e
+int drawable ic_cart 0x7f0700ee
 int drawable ic_clear_black_24 0x7f07008f
 int drawable ic_clock_black_24dp 0x7f070090
 int drawable ic_home 0x7f070091
