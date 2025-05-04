@@ -4,11 +4,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -73,7 +75,35 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        // --- Código para agregar dinámicamente un elemento: el título "Últimos agregados" ---
 
+        // 1. Obtener una referencia al LinearLayout principal dentro del ScrollView
+                LinearLayout linearLayoutPrincipal = (LinearLayout) findViewById(R.id.card_quienes).getParent();
+
+        // 2. Obtener una referencia a la CardView "Quiénes somos?" para insertar después
+                androidx.cardview.widget.CardView cardQuienes = findViewById(R.id.card_quienes);
+
+        // 3. Crear el Elemento: TextView para el título
+                TextView tituloUltimosAgregados = new TextView(this);
+                LinearLayout.LayoutParams tituloLayoutParams = new LinearLayout.LayoutParams(
+                        LinearLayout.LayoutParams.WRAP_CONTENT,
+                        LinearLayout.LayoutParams.WRAP_CONTENT
+                );
+                tituloLayoutParams.gravity = android.view.Gravity.CENTER_HORIZONTAL;
+                tituloLayoutParams.setMargins(0, 80, 0, 32); // Margen superior e inferior
+                tituloUltimosAgregados.setLayoutParams(tituloLayoutParams);
+                tituloUltimosAgregados.setText("Últimos agregados");
+                tituloUltimosAgregados.setTextSize(23);
+                tituloUltimosAgregados.setTypeface(null, android.graphics.Typeface.BOLD);
+                tituloUltimosAgregados.setTextColor(ContextCompat.getColor(this, android.R.color.white));
+                tituloUltimosAgregados.setBackgroundColor(ContextCompat.getColor(this, R.color.holo_blue_light));
+                tituloUltimosAgregados.setPadding(16, 8, 16, 8); // Padding para el texto dentro del fondo
+
+        // 4. Obtener el índice de la CardView "Quiénes somos?"
+                int indexCardQuienes = linearLayoutPrincipal.indexOfChild(cardQuienes);
+
+        // 5. Insertar el TextView justo después de la CardView "Quiénes somos?"
+                linearLayoutPrincipal.addView(tituloUltimosAgregados, indexCardQuienes + 1);
 
 
     }

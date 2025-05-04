@@ -1,6 +1,7 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color holo_blue_light
 color white
 drawable ic_categories
 drawable ic_home
