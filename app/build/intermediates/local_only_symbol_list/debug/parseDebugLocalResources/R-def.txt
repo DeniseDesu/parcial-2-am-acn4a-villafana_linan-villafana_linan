@@ -49,9 +49,15 @@ string cart_label
 string cat_fifawc22_title
 string fifawc22_figu_paredes
 string fifawc22_figu_romero
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string home_label
 string locations_label
 string profile_user_label
+string project_id
 string quienes_somos_card_text
 string quienes_somos_card_title
 string store_label
