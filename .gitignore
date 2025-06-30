@@ -26,3 +26,4 @@ replay_pid*
 #ignore idea folder
 .idea
 local.properties
+app/google-services.json
