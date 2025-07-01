@@ -2,6 +2,9 @@ R_DEF: Internal format may change without notice
 local
 color app_name
 color bottom_navigation_background
+color edittext_background_light_grey
+color edittext_hint_dark_grey
+color edittext_stroke_grey
 color holo_blue_light
 color text_black
 color text_maincard
@@ -15,6 +18,7 @@ drawable ic_menu
 drawable ic_store
 drawable ic_user
 drawable ic_users
+drawable rounded_edittext_background
 id app_name
 id bottom_categories
 id bottom_home
@@ -23,6 +27,7 @@ id bottom_navigation
 id bottom_store
 id bottom_users
 id card_quienes
+id email_edit_text
 id figurita1_comprar
 id figurita1_image
 id figurita1_name
@@ -31,12 +36,18 @@ id figurita2_comprar
 id figurita2_image
 id figurita2_name
 id figurita2_title
+id forgot_password_text
 id linearultagreg
+id login_button
 id logo_banner
+id logo_tufi_store
 id main_tufi
 id menu_button
+id password_edit_text
+id register_text
 id top_bar
 id user_button
+layout activity_login
 layout activity_main
 mipmap figurita1
 mipmap figurita2
@@ -45,8 +56,11 @@ mipmap ic_launcher_round
 mipmap logo_tufi_store
 string app_name
 string buttom_comprar_cat
+string button_login
 string cart_label
 string cat_fifawc22_title
+string error_empty_email
+string error_empty_password
 string fifawc22_figu_paredes
 string fifawc22_figu_romero
 string gcm_defaultSenderId
@@ -56,11 +70,17 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string home_label
 string locations_label
+string placeholder_email
+string placeholder_password
 string profile_user_label
 string project_id
 string quienes_somos_card_text
 string quienes_somos_card_title
 string store_label
+string text_forgot_password
+string text_register
+string toast_login_failed
+string toast_login_success
 style Base.Theme.TuFi_Store
 style Theme.TuFi_Store
 xml backup_rules
