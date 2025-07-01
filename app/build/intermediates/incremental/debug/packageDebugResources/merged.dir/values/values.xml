@@ -25,6 +25,7 @@
     <string name="google_storage_bucket" translatable="false">tufistore.firebasestorage.app</string>
     <string name="home_label">Inicio</string>
     <string name="locations_label">Sucursales</string>
+    <string name="logo_banner_description">Logo de TuFi Store</string>
     <string name="placeholder_email">Email</string>
     <string name="placeholder_password">Password</string>
     <string name="profile_user_label">Perfil</string>

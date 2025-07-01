@@ -20,4 +20,5 @@
     <string name="error_empty_password">La contraseña no puede estar vacía</string>
     <string name="toast_login_success">¡Inicio de sesión exitoso!</string>
     <string name="toast_login_failed">Email o contraseña incorrectos</string>
+    <string name="logo_banner_description">Logo de TuFi Store</string>
 </resources>

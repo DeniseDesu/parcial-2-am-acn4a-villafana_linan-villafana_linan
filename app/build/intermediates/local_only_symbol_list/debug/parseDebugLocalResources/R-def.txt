@@ -70,6 +70,7 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string home_label
 string locations_label
+string logo_banner_description
 string placeholder_email
 string placeholder_password
 string profile_user_label
