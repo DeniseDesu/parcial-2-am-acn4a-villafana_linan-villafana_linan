@@ -4,6 +4,8 @@ import android.content.Intent; // Para redirigir a LoginActivity
 import android.view.MenuItem; // Para manejar el clic en el elemento del menú
 import android.widget.PopupMenu; // Para mostrar el menú emergente
 
+import com.google.firebase.auth.FirebaseAuth; //Para integrar firebase authenticator
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -37,6 +39,10 @@ public class MainActivity extends AppCompatActivity {
     //Referencia al ícono de usuario del navbar
     private ImageView userButton;
 
+    //Se instancia el firebase authenticator
+    private FirebaseAuth mAuth;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +54,11 @@ public class MainActivity extends AppCompatActivity {
             return insets;
 
         });
+
+        //Para inicializar Firebase Autenticator
+        mAuth = FirebaseAuth.getInstance();
+
+
 
         // Obtener referencias a los elementos de la Card 1 (figurita1)
         figurita1TitleTextView = findViewById(R.id.figurita1_title);
@@ -148,6 +159,9 @@ public class MainActivity extends AppCompatActivity {
 
     //Metodo para cerrar al sesión y redirigir a la pantalla de loggin
     private void performLogout() {
+
+        mAuth.signOut(); // Cierra la sesión de Firebase
+
         Toast.makeText(MainActivity.this, "Sesión cerrada", Toast.LENGTH_SHORT).show(); // Mensaje al cliquear
 
         //Redirige a la pantalla de LoginActivity
