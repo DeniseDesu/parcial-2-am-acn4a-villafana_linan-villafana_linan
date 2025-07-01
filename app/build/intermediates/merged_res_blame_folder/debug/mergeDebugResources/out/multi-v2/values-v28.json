@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "ar.edu.davinci.tufi_store.app-mergeDebugResources-31:/values-v28/values-v28.xml",
+            "outputFile": "ar.edu.davinci.tufi_store.app-mergeDebugResources-39:/values-v28/values-v28.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\D\\.gradle\\caches\\8.11.1\\transforms\\262799526671b07ddf429ffed652b3f2\\transformed\\appcompat-1.7.0\\res\\values-v28\\values-v28.xml",
+                    "source": "C:\\Users\\David\\.gradle\\caches\\8.11.1\\transforms\\262799526671b07ddf429ffed652b3f2\\transformed\\appcompat-1.7.0\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,8",
                         "startColumns": "4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\D\\.gradle\\caches\\8.11.1\\transforms\\ea673419c287d65ede8328868a9bf9dc\\transformed\\material-1.12.0\\res\\values-v28\\values-v28.xml",
+                    "source": "C:\\Users\\David\\.gradle\\caches\\8.11.1\\transforms\\ea673419c287d65ede8328868a9bf9dc\\transformed\\material-1.12.0\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
