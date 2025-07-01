@@ -19,6 +19,7 @@ drawable ic_store
 drawable ic_user
 drawable ic_users
 drawable rounded_edittext_background
+id action_logout
 id app_name
 id bottom_categories
 id bottom_home
@@ -49,6 +50,7 @@ id top_bar
 id user_button
 layout activity_login
 layout activity_main
+menu user_menu
 mipmap figurita1
 mipmap figurita2
 mipmap ic_launcher
