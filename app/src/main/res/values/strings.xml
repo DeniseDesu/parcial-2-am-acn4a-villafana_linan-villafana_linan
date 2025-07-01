@@ -11,4 +11,13 @@
     <string name="fifawc22_figu_paredes">Leandro Paredes</string>
     <string name="buttom_comprar_cat">Comprar</string>
     <string name="fifawc22_figu_romero">Cristian Romero</string>
+    <string name="placeholder_email">Email</string>
+    <string name="placeholder_password">Password</string>
+    <string name="button_login">Login</string>
+    <string name="text_register">Registrarse</string>
+    <string name="text_forgot_password">Olvidó la contraseña?</string>
+    <string name="error_empty_email">El email no puede estar vacío</string>
+    <string name="error_empty_password">La contraseña no puede estar vacía</string>
+    <string name="toast_login_success">¡Inicio de sesión exitoso!</string>
+    <string name="toast_login_failed">Email o contraseña incorrectos</string>
 </resources>
