@@ -1,5 +1,9 @@
 package ar.edu.davinci.tufi_store;
 
+import android.content.Intent; // Para redirigir a LoginActivity
+import android.view.MenuItem; // Para manejar el clic en el elemento del menú
+import android.widget.PopupMenu; // Para mostrar el menú emergente
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -30,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
     TextView figurita2NameTextView;
     Button figurita2ComprarButton;
 
+    //Referencia al ícono de usuario del navbar
+    private ImageView userButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,5 +112,51 @@ public class MainActivity extends AppCompatActivity {
                 linearLayoutPrincipal.addView(tituloUltimosAgregados, indexCardQuienes + 1);
 
 
+        //Referencia al ImageView del botón del ícono de usuario en navbar
+        userButton = findViewById(R.id.user_button);
+
+        //Configuración del listener para el botón del ícono de usuario
+        userButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showUserPopupMenu(v);
+            }
+        });
+
     }
+
+    //Metodo para mostrar el menu emergente del ícono del usuario del navbar
+    private void showUserPopupMenu(View view) {
+        PopupMenu popup = new PopupMenu(this, view);
+        //Inflar el menú desde el archivo XML
+        popup.getMenuInflater().inflate(R.menu.user_menu, popup.getMenu());
+
+        // Setea el listener para hacer clic en el elemento del menú
+        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                // Verificar qué elemento del menú fue seleccionado
+                if (item.getItemId() == R.id.action_logout) {
+                    performLogout(); // Llama al método para cerrar sesión
+                    return true;
+                }
+                return false;
+            }
+        });
+        popup.show(); // Mostrar el menú
+    }
+
+    //Metodo para cerrar al sesión y redirigir a la pantalla de loggin
+    private void performLogout() {
+        Toast.makeText(MainActivity.this, "Sesión cerrada", Toast.LENGTH_SHORT).show(); // Mensaje al cliquear
+
+        //Redirige a la pantalla de LoginActivity
+        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent); // Inicia LoginActivity
+        finish(); // Finaliza MainActivity
+    }
+
+
+
 }
