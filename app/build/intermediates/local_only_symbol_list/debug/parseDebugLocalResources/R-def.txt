@@ -62,7 +62,9 @@ string button_login
 string cart_label
 string cat_fifawc22_title
 string error_empty_email
+string error_empty_email_reset
 string error_empty_password
+string error_password_length
 string fifawc22_figu_paredes
 string fifawc22_figu_romero
 string gcm_defaultSenderId
@@ -85,6 +87,10 @@ string text_forgot_password
 string text_register
 string toast_login_failed
 string toast_login_success
+string toast_registration_failed
+string toast_registration_success
+string toast_reset_password_failed
+string toast_reset_password_success
 style Base.Theme.TuFi_Store
 style Theme.TuFi_Store
 xml backup_rules

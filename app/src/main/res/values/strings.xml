@@ -22,4 +22,10 @@
     <string name="toast_login_failed">Email o contraseña incorrectos</string>
     <string name="logo_banner_description">Logo de TuFi Store</string>
     <string name="menu_logout">Cerrar Sesión</string>
+    <string name="error_password_length">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="toast_registration_success">¡Registro exitoso! Ya puedes iniciar sesión.</string>
+    <string name="toast_registration_failed">Error en el registro</string>
+    <string name="error_empty_email_reset">Ingrese un email para restablecer la contraseña</string>
+    <string name="toast_reset_password_success">Se ha enviado un correo de recuperación a su email. Revise su bandeja de entrada.</string>
+    <string name="toast_reset_password_failed">Error al enviar el correo de recuperación</string>
 </resources>

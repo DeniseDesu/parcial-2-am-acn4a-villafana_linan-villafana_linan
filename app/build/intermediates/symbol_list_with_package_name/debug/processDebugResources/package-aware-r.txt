@@ -3996,8 +3996,10 @@ string common_signin_button_text_long
 string copy_toast_msg
 string error_a11y_label
 string error_empty_email
+string error_empty_email_reset
 string error_empty_password
 string error_icon_content_description
+string error_password_length
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
@@ -4141,6 +4143,10 @@ string text_forgot_password
 string text_register
 string toast_login_failed
 string toast_login_success
+string toast_registration_failed
+string toast_registration_success
+string toast_reset_password_failed
+string toast_reset_password_success
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
