@@ -28,4 +28,9 @@
     <string name="error_empty_email_reset">Ingrese un email para restablecer la contraseña</string>
     <string name="toast_reset_password_success">Se ha enviado un correo de recuperación a su email. Revise su bandeja de entrada.</string>
     <string name="toast_reset_password_failed">Error al enviar el correo de recuperación</string>
+    <string name="locations_screen_title">Sucursales</string>
+    <string name="toast_locations_load_error">Error al cargar sucursales</string>
+    <string name="toast_no_locations_found">No se encontraron sucursales.</string>
+    <string name="toast_json_parse_error">Error al procesar datos de sucursales</string>
+    <string name="location_image_description">Imagen de la sucursal %1$s</string>
 </resources>

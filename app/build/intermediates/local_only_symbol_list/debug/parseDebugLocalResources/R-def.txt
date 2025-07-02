@@ -79,7 +79,9 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string home_label
+string location_image_description
 string locations_label
+string locations_screen_title
 string logo_banner_description
 string menu_logout
 string placeholder_email
@@ -91,8 +93,11 @@ string quienes_somos_card_title
 string store_label
 string text_forgot_password
 string text_register
+string toast_json_parse_error
+string toast_locations_load_error
 string toast_login_failed
 string toast_login_success
+string toast_no_locations_found
 string toast_registration_failed
 string toast_registration_success
 string toast_reset_password_failed

@@ -2073,7 +2073,9 @@
     <string name="home_label">Inicio</string>
     <string description="Content description for an icon that appears in the title area of a dialog" name="icon_content_description">Dialog Icon</string>
     <string name="item_view_role_description">Tab</string>
+    <string name="location_image_description">Imagen de la sucursal %1$s</string>
     <string name="locations_label">Sucursales</string>
+    <string name="locations_screen_title">Sucursales</string>
     <string name="logo_banner_description">Logo de TuFi Store</string>
     <string name="m3_exceed_max_badge_text_suffix" translatable="false"><ns2:g example="Some te" id="part of a long text">%1$s</ns2:g><ns2:g example="…" id="suffix">%2$s</ns2:g></string>
     <string name="m3_ref_typeface_brand_medium" translatable="false">sans-serif-medium</string>
@@ -2205,8 +2207,11 @@
     <string name="store_label">Tienda</string>
     <string name="text_forgot_password">Olvidó la contraseña?</string>
     <string name="text_register">Registrarse</string>
+    <string name="toast_json_parse_error">Error al procesar datos de sucursales</string>
+    <string name="toast_locations_load_error">Error al cargar sucursales</string>
     <string name="toast_login_failed">Email o contraseña incorrectos</string>
     <string name="toast_login_success">¡Inicio de sesión exitoso!</string>
+    <string name="toast_no_locations_found">No se encontraron sucursales.</string>
     <string name="toast_registration_failed">Error en el registro</string>
     <string name="toast_registration_success">¡Registro exitoso! Ya puedes iniciar sesión.</string>
     <string name="toast_reset_password_failed">Error al enviar el correo de recuperación</string>
