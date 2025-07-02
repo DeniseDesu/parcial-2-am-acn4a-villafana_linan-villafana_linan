@@ -9,6 +9,8 @@ color holo_blue_light
 color text_black
 color text_maincard
 color top_bar_background
+dimen location_image_height
+dimen location_image_width
 drawable ic_cart
 drawable ic_home
 drawable ic_launcher_background
@@ -39,6 +41,9 @@ id figurita2_name
 id figurita2_title
 id forgot_password_text
 id linearultagreg
+id loading_indicator
+id locations_container
+id locations_title
 id login_button
 id logo_banner
 id logo_tufi_store
@@ -48,6 +53,7 @@ id password_edit_text
 id register_text
 id top_bar
 id user_button
+layout activity_locations
 layout activity_login
 layout activity_main
 menu user_menu

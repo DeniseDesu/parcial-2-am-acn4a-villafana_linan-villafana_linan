@@ -52,6 +52,7 @@ MERGED from [com.google.android.gms:play-services-tasks:18.2.0] C:\Users\David\.
 MERGED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\David\.gradle\caches\8.11.1\transforms\7f462ee857555b9b36a54f82b276c596\transformed\play-services-basement-18.4.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\David\.gradle\caches\8.11.1\transforms\b9567d97e3f931732bd48411dc08a7b6\transformed\fragment-1.5.4\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.10.1] C:\Users\David\.gradle\caches\8.11.1\transforms\59c0a4a3e7e858da4546482bb0f3d2b2\transformed\activity-1.10.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.volley:volley:1.2.1] C:\Users\David\.gradle\caches\8.11.1\transforms\5a01ead6abde612cc41bfe013b4f01cc\transformed\volley-1.2.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\David\.gradle\caches\8.11.1\transforms\47c41b1ab50967dc3ccd16e4be5d45b0\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\David\.gradle\caches\8.11.1\transforms\2056766751ca2324e978114bbc6d1341\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\David\.gradle\caches\8.11.1\transforms\bc8e000948837d85b877e1a8d8236fc0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:17:1-55:12
@@ -271,6 +272,8 @@ MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\David\.gradle\caches\8.1
 MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\David\.gradle\caches\8.11.1\transforms\b9567d97e3f931732bd48411dc08a7b6\transformed\fragment-1.5.4\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.10.1] C:\Users\David\.gradle\caches\8.11.1\transforms\59c0a4a3e7e858da4546482bb0f3d2b2\transformed\activity-1.10.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity:1.10.1] C:\Users\David\.gradle\caches\8.11.1\transforms\59c0a4a3e7e858da4546482bb0f3d2b2\transformed\activity-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.volley:volley:1.2.1] C:\Users\David\.gradle\caches\8.11.1\transforms\5a01ead6abde612cc41bfe013b4f01cc\transformed\volley-1.2.1\AndroidManifest.xml:5:5-43
+MERGED from [com.android.volley:volley:1.2.1] C:\Users\David\.gradle\caches\8.11.1\transforms\5a01ead6abde612cc41bfe013b4f01cc\transformed\volley-1.2.1\AndroidManifest.xml:5:5-43
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\David\.gradle\caches\8.11.1\transforms\47c41b1ab50967dc3ccd16e4be5d45b0\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\David\.gradle\caches\8.11.1\transforms\47c41b1ab50967dc3ccd16e4be5d45b0\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\David\.gradle\caches\8.11.1\transforms\2056766751ca2324e978114bbc6d1341\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
