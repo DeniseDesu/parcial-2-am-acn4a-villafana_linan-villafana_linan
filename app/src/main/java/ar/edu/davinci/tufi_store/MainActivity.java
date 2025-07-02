@@ -42,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
     //Referencia al boton del footer Sucursarles
     private LinearLayout bottomLocations;
 
+    //Referencia al botón del footer Tienda
+    private LinearLayout bottomCategories;
+
     //Se instancia el firebase authenticator
     private FirebaseAuth mAuth;
 
@@ -124,6 +127,21 @@ public class MainActivity extends AppCompatActivity {
 
         // 5. Insertar el TextView justo después de la CardView "Quiénes somos?"
                 linearLayoutPrincipal.addView(tituloUltimosAgregados, indexCardQuienes + 1);
+
+
+        // Obtener referencia al LinearLayout del botón de Tienda
+        bottomCategories = findViewById(R.id.bottom_categories);
+
+        // Configurar listener para el botón de Tienda
+        bottomCategories.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, StoreActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                startActivity(intent);
+                finish();
+            }
+        });
                 
 
         // Obtener referencia al LinearLayout del botón de Sucursales en el Bottom Navigation
