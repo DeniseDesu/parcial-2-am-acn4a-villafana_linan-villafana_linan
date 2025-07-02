@@ -36,7 +36,7 @@ public class LocationsActivity extends AppCompatActivity {
     private ImageLoader imageLoader; // Instancia de ImageLoader
 
 //Reemplazar con la URL real del archivo JSON
-    private static final String JSON_URL = "";
+    private static final String JSON_URL = "https://raw.githubusercontent.com/DeniseDesu/parcial-1-am-acn4a-villafana_linan-villafana_linan/refs/heads/main/informe/Repositorio%20-%20Volley/locations.json";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
