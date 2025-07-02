@@ -2209,8 +2209,10 @@
     <string description="Title of the side sheet&apos;s accessibility pane that is spoken by TalkBack when the side sheet appears on screen. [CHAR_LIMIT=NONE]" name="side_sheet_accessibility_pane_title">Side Sheet</string>
     <string name="side_sheet_behavior" translatable="false">com.google.android.material.sidesheet.SideSheetBehavior</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="store_content_placeholder">Aquí se mostrarán las figuritas de la tienda.</string>
     <string name="store_icon_description">Icono de tienda</string>
     <string name="store_label">Tienda</string>
+    <string name="store_screen_title">Tienda</string>
     <string name="text_forgot_password">Olvidó la contraseña?</string>
     <string name="text_register">Registrarse</string>
     <string name="toast_json_parse_error">Error al procesar datos de sucursales</string>

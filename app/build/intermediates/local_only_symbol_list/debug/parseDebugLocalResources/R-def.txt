@@ -51,11 +51,13 @@ id main_tufi
 id menu_button
 id password_edit_text
 id register_text
+id store_screen_title
 id top_bar
 id user_button
 layout activity_locations
 layout activity_login
 layout activity_main
+layout activity_store
 menu user_menu
 mipmap figurita1
 mipmap figurita2
@@ -95,8 +97,10 @@ string profile_user_label
 string project_id
 string quienes_somos_card_text
 string quienes_somos_card_title
+string store_content_placeholder
 string store_icon_description
 string store_label
+string store_screen_title
 string text_forgot_password
 string text_register
 string toast_json_parse_error

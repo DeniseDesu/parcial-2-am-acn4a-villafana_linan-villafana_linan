@@ -41,5 +41,7 @@
     <string name="cart_icon_description">Icono de carrito</string>
     <string name="profile_icon_description">Icono de perfil de usuario</string>
     <string name="toast_logout_success">Sesión cerrada exitosamente</string>
+    <string name="store_screen_title">Tienda</string>
+    <string name="store_content_placeholder">Aquí se mostrarán las figuritas de la tienda.</string>
 
 </resources>

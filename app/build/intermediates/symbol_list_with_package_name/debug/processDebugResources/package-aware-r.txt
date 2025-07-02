@@ -3640,6 +3640,7 @@ id startVertical
 id staticLayout
 id staticPostLayout
 id stop
+id store_screen_title
 id stretch
 id submenuarrow
 id submit_area
@@ -3839,6 +3840,7 @@ layout abc_tooltip
 layout activity_locations
 layout activity_login
 layout activity_main
+layout activity_store
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -4151,8 +4153,10 @@ string searchview_navigation_content_description
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
+string store_content_placeholder
 string store_icon_description
 string store_label
+string store_screen_title
 string text_forgot_password
 string text_register
 string toast_json_parse_error
