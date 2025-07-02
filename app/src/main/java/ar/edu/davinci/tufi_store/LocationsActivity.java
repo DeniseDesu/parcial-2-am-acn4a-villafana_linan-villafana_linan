@@ -1,17 +1,20 @@
 package ar.edu.davinci.tufi_store;
 
+import android.content.Intent;
 import android.graphics.Bitmap; // Importación necesaria para Bitmap
 import android.os.Bundle;
-import android.view.LayoutInflater;
+import android.view.MenuItem; // Importado para el PopupMenu
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.PopupMenu; // Importado para el PopupMenu
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView; // Importación necesaria para CardView
+import androidx.collection.LruCache; // Importación necesaria para LruCache
 import androidx.core.content.ContextCompat; // Importación necesaria para ContextCompat
 
 import com.android.volley.Request;
@@ -22,11 +25,13 @@ import com.android.volley.toolbox.ImageLoader; // Importación necesaria para Im
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import androidx.collection.LruCache; // Importación necesaria para LruCache
+
 
 public class LocationsActivity extends AppCompatActivity {
 
@@ -35,6 +40,17 @@ public class LocationsActivity extends AppCompatActivity {
     private RequestQueue requestQueue;
     private ImageLoader imageLoader; // Instancia de ImageLoader
 
+    private ImageView menuButton;
+    private ImageView userButton;
+    private LinearLayout bottomHome;
+    private LinearLayout bottomCategories;
+    private LinearLayout bottomLocations;
+    private LinearLayout bottomStore;
+    private LinearLayout bottomUsers;
+
+    // Para Firebase Auth (LogOut)
+    private FirebaseAuth mAuth;
+
 //Reemplazar con la URL real del archivo JSON
     private static final String JSON_URL = "https://raw.githubusercontent.com/DeniseDesu/parcial-1-am-acn4a-villafana_linan-villafana_linan/refs/heads/main/informe/Repositorio%20-%20Volley/locations.json";
 
@@ -42,6 +58,9 @@ public class LocationsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_locations);
+
+        //Inicializa Firebase Auth para el logout
+        mAuth = FirebaseAuth.getInstance();
 
         locationsContainer = findViewById(R.id.locations_container);
         loadingIndicator = findViewById(R.id.loading_indicator);
@@ -62,7 +81,98 @@ public class LocationsActivity extends AppCompatActivity {
             }
         });
 
+        //INICIALIZAR Y CONFIGURAR LISTENERS DE BARRAS
+        // Top Bar
+        menuButton = findViewById(R.id.menu_button);
+        userButton = findViewById(R.id.user_button);
+
+        menuButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(LocationsActivity.this, "Botón de menú clicado en Sucursales", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        userButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showUserPopupMenu(v);
+            }
+        });
+
+        // Bottom Navigation
+        bottomHome = findViewById(R.id.bottom_home);
+        bottomCategories = findViewById(R.id.bottom_categories);
+        bottomLocations = findViewById(R.id.bottom_locations);
+        bottomStore = findViewById(R.id.bottom_store);
+        bottomUsers = findViewById(R.id.bottom_users);
+
+        // Listener para Home
+        bottomHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LocationsActivity.this, MainActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                startActivity(intent);
+                finish(); // Finaliza LocationsActivity para evitar duplicados en la pila si Home es el destino principal.
+            }
+        });
+
+        // Listener para bottom nav: Tienda
+        bottomCategories.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(LocationsActivity.this, "Botón de Tienda clicado en Sucursales", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        // Listener para bottom nav: Carrito
+        bottomStore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(LocationsActivity.this, "Botón de Carrito clicado en Sucursales", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        // Listener para bottom nav: Perfil
+        bottomUsers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(LocationsActivity.this, "Botón de Perfil clicado en Sucursales", Toast.LENGTH_SHORT).show();
+            }
+        });
+
         fetchLocations(); // Llama al método para obtener los datos de las sucursales
+    }
+
+    // Método para mostrar el menú emergente del usuario (copiado de MainActivity)
+    private void showUserPopupMenu(View view) {
+        PopupMenu popup = new PopupMenu(this, view);
+        popup.getMenuInflater().inflate(R.menu.user_menu, popup.getMenu());
+
+        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                if (item.getItemId() == R.id.action_logout) {
+                    performLogout();
+                    return true;
+                }
+                return false;
+            }
+        });
+        popup.show();
+    }
+
+    // Método para cerrar la sesión y redirigir a la pantalla de login (copiado de MainActivity)
+    private void performLogout() {
+        mAuth.signOut(); // Cierra la sesión de Firebase
+        Toast.makeText(LocationsActivity.this, getString(R.string.toast_logout_success), Toast.LENGTH_SHORT).show();
+
+        Intent intent = new Intent(LocationsActivity.this, LoginActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish();
     }
 
     private void fetchLocations() {
@@ -146,14 +256,14 @@ public class LocationsActivity extends AppCompatActivity {
                             imageView.setImageBitmap(response.getBitmap());
                         } else {
                             // Si no hay imagen, o en caso de error, usa un placeholder
-                            imageView.setImageResource(R.drawable.ic_store); // Asegúrate de tener este drawable
+                            imageView.setImageResource(R.drawable.ic_store);
                         }
                     }
 
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         // En caso de error al cargar la imagen, usa un drawable de error
-                        imageView.setImageResource(R.drawable.ic_store); // Asegúrate de tener este drawable
+                        imageView.setImageResource(R.drawable.ic_store);
                         error.printStackTrace(); // Para depuración
                     }
                 });
