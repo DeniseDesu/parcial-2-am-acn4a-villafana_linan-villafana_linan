@@ -3975,6 +3975,7 @@ string call_notification_hang_up_action
 string call_notification_incoming_text
 string call_notification_ongoing_text
 string call_notification_screening_text
+string cart_icon_description
 string cart_label
 string cat_fifawc22_title
 string character_counter_content_description
@@ -4020,10 +4021,12 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
+string home_icon_description
 string home_label
 string icon_content_description
 string item_view_role_description
 string location_image_description
+string locations_icon_description
 string locations_label
 string locations_screen_title
 string logo_banner_description
@@ -4065,6 +4068,7 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string menu_button_description
 string menu_logout
 string mtrl_badge_numberless_content_description
 string mtrl_checkbox_button_icon_path_checked
@@ -4135,6 +4139,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string placeholder_email
 string placeholder_password
+string profile_icon_description
 string profile_user_label
 string project_id
 string quienes_somos_card_text
@@ -4146,6 +4151,7 @@ string searchview_navigation_content_description
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
+string store_icon_description
 string store_label
 string text_forgot_password
 string text_register
@@ -4153,11 +4159,13 @@ string toast_json_parse_error
 string toast_locations_load_error
 string toast_login_failed
 string toast_login_success
+string toast_logout_success
 string toast_no_locations_found
 string toast_registration_failed
 string toast_registration_success
 string toast_reset_password_failed
 string toast_reset_password_success
+string user_button_description
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

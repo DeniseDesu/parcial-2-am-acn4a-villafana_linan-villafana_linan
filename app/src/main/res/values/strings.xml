@@ -33,4 +33,13 @@
     <string name="toast_no_locations_found">No se encontraron sucursales.</string>
     <string name="toast_json_parse_error">Error al procesar datos de sucursales</string>
     <string name="location_image_description">Imagen de la sucursal %1$s</string>
+    <string name="menu_button_description">Botón de menú</string>
+    <string name="user_button_description">Botón de usuario</string>
+    <string name="home_icon_description">Icono de inicio</string>
+    <string name="store_icon_description">Icono de tienda</string>
+    <string name="locations_icon_description">Icono de sucursales</string>
+    <string name="cart_icon_description">Icono de carrito</string>
+    <string name="profile_icon_description">Icono de perfil de usuario</string>
+    <string name="toast_logout_success">Sesión cerrada exitosamente</string>
+
 </resources>
