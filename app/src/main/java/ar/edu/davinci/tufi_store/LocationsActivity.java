@@ -123,8 +123,11 @@ public class LocationsActivity extends AppCompatActivity {
         bottomCategories.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(LocationsActivity.this, "Botón de Tienda clicado en Sucursales", Toast.LENGTH_SHORT).show();
-            }
+                Intent intent = new Intent(LocationsActivity.this, StoreActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                startActivity(intent);
+                finish();
+           }
         });
 
         // Listener para bottom nav: Carrito
